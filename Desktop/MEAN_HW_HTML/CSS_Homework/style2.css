@@ -3,19 +3,21 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  margin: 0; 
   
 }
 
 .tweet{
   display: flex;
   gap: 12px;
-
   background: #fff;
   border: 1px solid #cfd9de;
   border-radius: 16px;
   padding: 12px;
-
   max-width: 700px;
+  width: 100%;      
+  box-sizing: border-box;
 }
 
 .avatar{
@@ -23,6 +25,7 @@ body{
   height: 48px;
   border-radius: 50%;
   flex-shrink: 0;
+  object-fit: cover;
 }
 
 .tweet-content{
@@ -54,7 +57,6 @@ body{
 .actions{
   display: flex;
   justify-content: space-between;
-
   max-width: 425px;
 }
 
